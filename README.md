@@ -90,7 +90,7 @@ Neither approach is wrong. They optimize for different constraints. ApplyFlow is
 ### Step 1: Onboard
 
 ```bash
-git clone https://github.com/jcraig-fdsn/ApplyFlow.git
+git clone https://github.com/1j9c92/ApplyFlow.git
 cd ApplyFlow
 
 # Open Claude Code in the onboarding directory
@@ -239,4 +239,4 @@ AGPL-3.0. If you deploy this as a service, share your improvements.
 
 ## Credits
 
-Built by [Jason Craig](https://github.com/jcraig-fdsn). Born from a real job search where the system produced 32+ blocks of iteratively refined cover letters across a three-month period.
+Built by [Jason Craig](https://github.com/1j9c92). Born from a real job search where the system produced 32+ blocks of iteratively refined cover letters across a three-month period.
