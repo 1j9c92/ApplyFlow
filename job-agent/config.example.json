@@ -1,0 +1,17 @@
+{
+  "base_path": "/path/to/ApplyFlow",
+  "email": "your.email@gmail.com",
+  "credential_vault": "ApplyFlow Credentials",
+  "linkedin_auth_path": "playwright_scripts/linkedin_auth.json",
+  "cover_letter_loop_path": "../cover-letter-loop",
+  "career_context_path": "../career-context",
+  "use_1password": true,
+  "accounts_fallback_path": "accounts.json",
+  "openai_api_key": null,
+  "default_resume_type": "technical",
+  "apply_timeout_seconds": 120,
+  "verification_code_timeout_seconds": 30,
+  "max_retries": 3,
+  "headless": true,
+  "slow_motion_ms": 100
+}

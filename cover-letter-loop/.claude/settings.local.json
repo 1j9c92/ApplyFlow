@@ -1,0 +1,58 @@
+{
+  "description": "ApplyFlow Cover Letter Loop — Claude Code settings",
+  "context": {
+    "mode": "loop",
+    "sessions": ["A", "B", "C"],
+    "session_isolation": true,
+    "context_refresh_per_session": true
+  },
+  "files": {
+    "entry_point": "CLAUDE.md",
+    "program": "program.md",
+    "state": "loop-state.md",
+    "strategy": "strategy-brief.md",
+    "skill": "cover-letter-skill.md",
+    "interests": "interest-mapper.md",
+    "questions": "questions.md",
+    "answers": "user-answers.md",
+    "jd": "next-jd.md",
+    "pdf_generator": "cover_letter_pdf.py",
+    "drafts": "drafts/"
+  },
+  "session_a": {
+    "name": "Research & Strategy",
+    "inputs": ["next-jd.md", "career-context"],
+    "outputs": ["strategy-brief.md"],
+    "context_window": "research-heavy"
+  },
+  "session_b": {
+    "name": "Drafting & Refinement",
+    "inputs": ["strategy-brief.md", "cover-letter-skill.md", "write-like-user.md"],
+    "outputs": ["drafts/", "critic-feedback.md"],
+    "context_window": "minimal",
+    "iterations": "3-5 critic cycles"
+  },
+  "session_c": {
+    "name": "Learning & Advancement",
+    "inputs": ["drafts/", "critic-feedback.md", "cover-letter-skill.md", "interest-mapper.md"],
+    "outputs": ["cover-letter-skill.md", "interest-mapper.md", "loop-state.md", "PDF"],
+    "context_window": "reflection-focused",
+    "permissions": ["update_skill_file", "update_interest_file", "update_state", "generate_pdf"]
+  },
+  "scoring": {
+    "dimensions": [
+      "Argument Strength (AS)",
+      "Interest Authenticity (IA)",
+      "Voice Fidelity (VF)",
+      "Structural Integrity (SI)",
+      "Fit Honesty (FH)"
+    ],
+    "max_score": 50,
+    "tier_ceilings": {
+      "tier_1": 48,
+      "tier_2": 44,
+      "tier_3": 41
+    },
+    "regression_guard": 2
+  }
+}

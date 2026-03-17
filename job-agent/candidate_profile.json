@@ -1,0 +1,56 @@
+{
+  "personal": {
+    "name": "Your Name",
+    "email": "your.email@example.com",
+    "phone": "+1-555-0000",
+    "location": "City, State",
+    "linkedin_url": "https://linkedin.com/in/yourprofile"
+  },
+  "work_history": [
+    {
+      "company": "Company A",
+      "title": "Job Title",
+      "duration_start": "2024-01-01",
+      "duration_end": "2026-01-01",
+      "location": "City, State",
+      "key_achievements": [
+        "Achievement 1",
+        "Achievement 2"
+      ],
+      "key_skills": [
+        "Skill 1",
+        "Skill 2"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "University Name",
+      "degree": "Degree Type",
+      "field": "Field of Study",
+      "graduation_year": 2020,
+      "gpa": "3.8",
+      "honors": "Cum Laude"
+    }
+  ],
+  "certifications": [
+    "Certification Name"
+  ],
+  "target_roles": [
+    "BizOps",
+    "Pricing Strategy",
+    "Strategic Finance"
+  ],
+  "target_industries": [
+    "SaaS",
+    "Marketplace",
+    "Sports Tech"
+  ],
+  "resumes": {
+    "technical": "resumes/technical_resume.docx",
+    "executive": "resumes/executive_resume.docx",
+    "entrepreneurial": "resumes/entrepreneurial_resume.docx"
+  },
+  "summary": "2-3 sentence professional summary for cover letters",
+  "linkedin_headline": "Your LinkedIn headline"
+}

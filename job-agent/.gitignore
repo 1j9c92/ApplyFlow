@@ -1,0 +1,48 @@
+# Configuration (user-specific)
+config.json
+accounts.json
+
+# Playwright auth
+playwright_scripts/linkedin_auth.json
+
+# Runtime state
+agent_state.json
+job_queue.json
+field_patterns.json
+
+# Application outputs
+jobs/
+outreach/
+applied_jobs/
+logs/
+
+# Credentials
+.env
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp
+*.tmp
+*.temp
+.pytest_cache/
